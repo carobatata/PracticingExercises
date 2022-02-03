@@ -54,3 +54,4 @@ function timeConversion(s) {
     return militaryHour + s.substring(2,8)
 }
 
+module.exports = timeConversion;

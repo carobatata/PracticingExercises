@@ -22,5 +22,5 @@ var multiples = function() {
 
     // resultado = 233168
 
-
 // sumar todos esos resultados.
+

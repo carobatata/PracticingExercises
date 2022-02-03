@@ -1,0 +1,22 @@
+{
+  "name": "practicingexercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01.- Multiples3or5.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carobatata/PracticingExercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carobatata/PracticingExercises/issues"
+  },
+  "homepage": "https://github.com/carobatata/PracticingExercises#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}

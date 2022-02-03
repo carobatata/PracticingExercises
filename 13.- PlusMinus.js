@@ -51,18 +51,28 @@
 
 function plusMinus(arr) {
     // Write your code here
-    let positives = 0;
-    let negatives = 0;
-    let zeros = 0;
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] > 0) positives += 1;
-        if(arr[i] < 0) negatives += 1;
-        if(arr[i] === 0) zeros += 1;
-    }
-    positives = (positives/arr.length).toFixed(6);
-    negatives = (negatives/arr.length).toFixed(6);
-    zeros = (zeros/arr.length).toFixed(6);
+    let { positives, negatives, zeros } = plusMinusResponses(arr);
     console.log(positives)
     console.log(negatives)
     console.log(zeros)
 }
+
+function plusMinusResponses(arr) {
+    let positives = 0;
+    let negatives = 0;
+    let zeros = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0)
+        positives += 1;
+        if (arr[i] < 0)
+        negatives += 1;
+        if (arr[i] === 0)
+        zeros += 1;
+    }
+    positives = (positives / arr.length).toFixed(6);
+    negatives = (negatives / arr.length).toFixed(6);
+    zeros = (zeros / arr.length).toFixed(6);
+    return { positives, negatives, zeros };
+}
+
+module.exports = plusMinusResponses;
