@@ -45,3 +45,5 @@ function birthdayCakeCandles(candles) {
     }
     return maxTimes;
 }
+
+module.exports = birthdayCakeCandles;

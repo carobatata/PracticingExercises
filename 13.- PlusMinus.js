@@ -1,5 +1,7 @@
 // Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.
 
+const { array } = require("yargs");
+
 // Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
 
 // Example
@@ -61,6 +63,7 @@ function plusMinusResponses(arr) {
     let positives = 0;
     let negatives = 0;
     let zeros = 0;
+    if(!arr || arr.length === 0) return { positives: '0.000000', negatives: '0.000000', zeros: '0.000000' }
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 0)
         positives += 1;

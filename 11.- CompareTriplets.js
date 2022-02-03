@@ -84,3 +84,5 @@ function compareTriplets(a, b) {
     array.push(pointsB);
     return array;
 }
+
+module.exports = compareTriplets;
