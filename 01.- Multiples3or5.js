@@ -24,3 +24,4 @@ var multiples = function() {
 
 // sumar todos esos resultados.
 
+module.exports = multiples;

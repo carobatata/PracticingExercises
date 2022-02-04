@@ -34,7 +34,9 @@
 // Candle heights are . The tallest candles are  units, and there are  of them.
 
 function birthdayCakeCandles(candles) {
-    // Write your code here
+   
+    if(!candles) return 0;
+   
     let max = candles[0];
     let maxTimes = 0;
     for(let i = 0; i < candles.length; i++){

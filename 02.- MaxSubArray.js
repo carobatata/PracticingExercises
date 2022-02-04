@@ -31,3 +31,5 @@ var maxSubArray = function(nums) {
     }
     return maxSum;
 };
+
+module.exports = maxSubArray;

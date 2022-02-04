@@ -39,6 +39,7 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeElement = function(nums, val) {
+    if(!nums) return 0;
     for(var i = 0; i < nums.length; i++) {
         if(nums[i] === val) {
             nums.splice(i, 1); 
@@ -47,3 +48,5 @@ var removeElement = function(nums, val) {
     } 
     return nums.length;
 };
+
+module.exports = removeElement;

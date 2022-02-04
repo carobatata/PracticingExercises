@@ -28,6 +28,8 @@ var reverseString = function(s) {
     return s;
 };
 
+module.exports = reverseString;
+
 // var reverseString = function(input) {
 //     var reverseArray = [];
 //     for(var i=0; i < input.length; i++) {
