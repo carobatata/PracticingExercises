@@ -13,5 +13,14 @@
 // Output: true
 
 var containsDuplicate = function(nums) {
-    
+    let counter = 0;
+    if(!nums) return false;
+    for(let i = 0; i < nums.length - 1; i++){
+        for(let j = i+1; j < nums.length; j++){
+            if(nums[i] === nums[j]) counter += 1;
+        }
+    }
+    return counter > 0;
 };
+
+module.exports = containsDuplicate;
